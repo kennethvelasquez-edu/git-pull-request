@@ -9,7 +9,7 @@ public class Main {
         // Cada alumno puede llamar temporalmente su método aquí para probarlo.
         // Ejemplo:
         // estructuraBaseEjercicio1();
-
+        estructuraBaseEjercicio15();
     }
 
 
@@ -324,7 +324,9 @@ public class Main {
      * --body "Se agregó un ciclo descendente para imprimir los números desde 10 hasta 1."
      */
     public static void estructuraBaseEjercicio15() {
-
+        for(int num = 10; num >= 1; num--){
+    System.out.println("Numero : " + num);
+}
     }
 
 
