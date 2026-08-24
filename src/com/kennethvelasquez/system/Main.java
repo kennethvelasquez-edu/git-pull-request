@@ -632,6 +632,20 @@ public class Main {
      * --body "Se implementó una estructura condicional para clasificar una nota según diferentes rangos."
      */
     public static void estructuraBaseEjercicio29() {
+        
+        int nota = 85;
+
+        if (nota >= 90) {
+            System.out.println("Excelente");
+        } else if (nota >= 80) {
+            System.out.println("Muy bueno");
+        } else if (nota >= 70) {
+            System.out.println("Bueno");
+        } else if (nota >= 60) {
+            System.out.println("Aprobado");
+        } else {
+            System.out.println("Reprobado");
+        }
 
     }
 
