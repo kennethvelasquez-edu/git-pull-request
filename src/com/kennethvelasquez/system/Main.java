@@ -28,8 +28,9 @@ public class Main {
      * --title "Resolver problema 1" \
      * --body "Se implementó la lógica necesaria para sumar dos números enteros y mostrar el resultado."
      */
-    public static void estructuraBaseEjercicio1() {
-
+    public static void estructuraBaseEjercicio1(int var1, int var2) {
+        int var3 = var1 + var2;
+        System.out.println(var3);
     }
 
 
