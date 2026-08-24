@@ -215,7 +215,7 @@ public class Main {
         double promedioTotal = (notaUno + notaDos + notaTres)  /  3;
         
         if (promedioTotal >= 60) {
-            System.out.println("Felicidades! Usted aprobo con un total de: " + promedioTotal);
+            System.out.println("Felicidades!! Usted aprobo con un total de: " + promedioTotal);
         } else {
             System.out.println("Lastima. Usted desaprobó con un total de: " + promedioTotal);
         }
