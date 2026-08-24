@@ -9,7 +9,7 @@ public class Main {
         // Cada alumno puede llamar temporalmente su método aquí para probarlo.
         // Ejemplo:
         // estructuraBaseEjercicio1();
-
+estructuraBaseEjercicio21();
     }
 
 
@@ -457,7 +457,13 @@ public class Main {
      * --body "Se agregó una comparación entre dos cadenas utilizando el método equals."
      */
     public static void estructuraBaseEjercicio21() {
-
+        String primerPalabra = "Kenneth";
+        String segundaPalabra = "Kenneth";
+        
+        if (primerPalabra.equals(segundaPalabra)){
+            System.out.println("Ambas palabras son identicas.");
+        }else
+            System.out.println("Las palabras son distintas.");
     }
 
 
