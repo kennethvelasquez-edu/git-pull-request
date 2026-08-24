@@ -539,7 +539,17 @@ public class Main {
      * --body "Se agregó un recorrido para encontrar el valor mayor almacenado dentro de un arreglo."
      */
     public static void estructuraBaseEjercicio25() {
-
+        int[] numeros = {15, 42, 8, 91, 23};
+        
+        int mayor = numeros[0];
+        
+        for (int i = 1; i < numeros.length; i++) {
+            if (numeros[i] > mayor) {
+                mayor = numeros[i]; // Actualiza el mayor si encuentra uno más grande
+            }
+        }
+        
+        System.out.println("El numero mas grande dentro del arreglo: " + mayor);
     }
 
 
