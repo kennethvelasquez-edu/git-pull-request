@@ -9,6 +9,7 @@ public class Main {
         // Cada alumno puede llamar temporalmente su método aquí para probarlo.
         // Ejemplo:
         // estructuraBaseEjercicio1();
+        estructuraBaseEjercicio4();
 
     }
 
@@ -90,10 +91,20 @@ public class Main {
      * --body "Se agregó la lógica para determinar si un número entero es par o impar."
      */
     public static void estructuraBaseEjercicio4() {
+        
+    int a = 12;
+    int b = 22;
+    int c = 36;
+    
+    int mayor = Math.max(a, Math.max(b, c));
+    
+        System.out.println("El numero mayor es ; ");
+        System.out.println(mayor);
+        
 
     }
-
-
+    
+    
     /**
      * Problema 5:
      * Define tres números enteros y muestra cuál de ellos es el mayor.
