@@ -6,9 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // Cada alumno puede llamar temporalmente su método aquí para probarlo.
-        // Ejemplo:
-        // estructuraBaseEjercicio1();
+        estructuraBaseEjercicio32();
 
     }
 
@@ -716,8 +714,22 @@ public class Main {
      * --title "Resolver problema 32" \
      * --body "Se recorrió un arreglo de notas para contabilizar estudiantes aprobados y reprobados."
      */
-    public static void estructuraBaseEjercicio32() {
+  public static void estructuraBaseEjercicio32() {
+    int[] notas = {70, 85, 45, 90, 60};
 
+    int aprobados = 0;
+    int reprobados = 0;
+
+    for (int nota : notas) {
+        if (nota >= 60) {
+            aprobados++;
+        } else {
+            reprobados++;
+        }
     }
+
+    System.out.println("Estudiantes aprobados: " + aprobados);
+    System.out.println("Estudiantes reprobados: " + reprobados);
+}
 
 }
