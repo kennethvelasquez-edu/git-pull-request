@@ -1,7 +1,5 @@
 package com.kennethvelasquez.system;
-
 import static java.lang.Math.PI;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -9,7 +7,7 @@ public class Main {
         // Cada alumno puede llamar temporalmente su método aquí para probarlo.
         // Ejemplo:
         // estructuraBaseEjercicio1();
-    }
+    
         estructuraBaseEjercicio23();
 
 
@@ -30,6 +28,27 @@ public class Main {
      * Al resolver el problema y comprobar que ejecuta correctamente, borra esta
      * sección del comentario.
      *
+=======
+    /**
+     * Problema 1: Solicita o define dos números enteros y muestra la suma de
+     * ambos.
+     *
+     * Al resolver el problema y comprobar que ejecuta correctamente, borra esta
+     * sección del comentario.
+     *
+     * git add Main.java git commit -m "feat: resolver problema 1 suma de
+     * numeros" git push origin rama_destino
+     *
+     * gh pr create --base tu-rama --head rama_destino \ --title "Resolver
+     * problema 1" \ --body "Se implementó la lógica necesaria para sumar dos
+     * números enteros y mostrar el resultado."
+     */
+    public static void estructuraBaseEjercicio1() {
+
+    }
+
+    /**
+>>>>>>> 207cc5d (feat: resolver problema 2 numero mayor)
      * git add Main.java git commit -m "feat: resolver problema 2 numero mayor"
      * git push origin rama_destino
      *
@@ -38,7 +57,12 @@ public class Main {
      * determinar cuál es mayor."
      */
     public static void estructuraBaseEjercicio2() {
-
+        int a = 15, b = 27;
+        if (a > b) {
+            System.out.println("El mayor es: " + a);
+        } else {
+            System.out.println("El mayor es: " + b);
+        }
     }
 
     /**
@@ -149,6 +173,7 @@ public class Main {
 
     }
 
+
     public static void estructuraBaseEjercicio9() {
         
         double radio = 12.5;
@@ -161,9 +186,22 @@ public class Main {
     }
 
     /**
+<<<<<<< HEAD
      * git add Main.java
      * git commit -m "feat: resolver problema 10 promedio notas"
      * git push origin rama_destino
+=======
+     * Problema 10: Define tres notas y calcula el promedio. Muestra si el
+     * estudiante aprobó.
+     *
+     * Se considera aprobado si el promedio es mayor o igual a 60.
+     *
+     * Al resolver el problema y comprobar que ejecuta correctamente, borra esta
+     * sección del comentario.
+     *
+     * git add Main.java git commit -m "feat: resolver problema 10 promedio
+     * notas" git push origin rama_destino
+>>>>>>> 207cc5d (feat: resolver problema 2 numero mayor)
      *
      * gh pr create --base tu-rama --head rama_destino \ --title "Resolver
      * problema 10" \ --body "Se calculó el promedio de tres notas y se agregó
@@ -652,9 +690,9 @@ public class Main {
 
     }
 
-
     public static void estructuraBaseEjercicio32() {
         int[] notas = {70, 85, 45, 90, 60};
+
 
         int aprobados = 0;
         int reprobados = 0;
