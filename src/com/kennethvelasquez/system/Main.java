@@ -7,7 +7,6 @@ public class Main {
     public static void main(String[] args) {
 
 
-
 estructuraBaseEjercicio21();
     
         estructuraBaseEjercicio23();
@@ -19,6 +18,9 @@ estructuraBaseEjercicio21();
       
         estructuraBaseEjercicio4();
 
+
+    
+        estructuraBaseEjercicio4();
 
     }
 
@@ -89,7 +91,6 @@ estructuraBaseEjercicio21();
         
 
     }
-
 
     
     
