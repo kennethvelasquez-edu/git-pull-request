@@ -10,13 +10,6 @@ public class Main {
         // Ejemplo:
         // estructuraBaseEjercicio1();
     }
-        estructuraBaseEjercicio23();
-
-
-        estructuraBaseEjercicio9();
-        estructuraBaseEjercicio12();
-
-    }
 
     public static void estructuraBaseEjercicio1(int var1, int var2) {
         int var3 = var1 + var2;
@@ -161,10 +154,6 @@ public class Main {
     }
 
     /**
-     * git add Main.java
-     * git commit -m "feat: resolver problema 10 promedio notas"
-     * git push origin rama_destino
-     *
      * gh pr create --base tu-rama --head rama_destino \ --title "Resolver
      * problema 10" \ --body "Se calculó el promedio de tres notas y se agregó
      * una validación para determinar si el estudiante aprobó."
