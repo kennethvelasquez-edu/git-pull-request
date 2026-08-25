@@ -314,8 +314,9 @@ public class Main {
                 break;
                 
                 default:
-                    System.out.println("El numero que indio no corresponde a un mes del año");
-                break;
+                    System.out.println("El numero que  no corresponde a un mes del año");
+                break;  
+                
         }
     }
 
