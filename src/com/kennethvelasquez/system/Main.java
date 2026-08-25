@@ -2,9 +2,12 @@ package com.kennethvelasquez.system;
 
 import java.util.Scanner;
 
+import static java.lang.Math.PI;
+
 public class Main {
 
     public static void main(String[] args) {
+
         estructuraBaseEjercicio26();
         // Cada alumno puede llamar temporalmente su método aquí para probarlo.
         // Ejemplo:
@@ -26,6 +29,17 @@ public class Main {
      * números enteros y mostrar el resultado."
      */
     public static void estructuraBaseEjercicio1() {
+
+        estructuraBaseEjercicio23();
+
+        estructuraBaseEjercicio9();
+        estructuraBaseEjercicio12();
+
+    }
+
+    public static void estructuraBaseEjercicio1(int var1, int var2) {
+        int var3 = var1 + var2;
+        System.out.println(var3);
 
     }
 
@@ -155,24 +169,13 @@ public class Main {
 
     }
 
-    /**
-     * Problema 9: Define el radio de un círculo y calcula su área.
-     *
-     * Fórmula: area = PI * radio * radio
-     *
-     * Puedes utilizar Math.PI.
-     *
-     * Al resolver el problema y comprobar que ejecuta correctamente, borra esta
-     * sección del comentario.
-     *
-     * git add Main.java git commit -m "feat: resolver problema 9 area circulo"
-     * git push origin rama_destino
-     *
-     * gh pr create --base tu-rama --head rama_destino \ --title "Resolver
-     * problema 9" \ --body "Se implementó el cálculo del área de un círculo
-     * utilizando su radio."
-     */
     public static void estructuraBaseEjercicio9() {
+
+        double radio = 12.5;
+
+        double area = PI * radio * radio;
+
+        System.out.println("El area del circulo es " + area);
 
     }
 
@@ -231,7 +234,62 @@ public class Main {
      * un mes a partir de su número."
      */
     public static void estructuraBaseEjercicio12() {
+        int numeroMes = 9;
 
+        switch (numeroMes) {
+            case 1:
+                System.out.println("Enero");
+                break;
+
+            case 2:
+                System.out.println("Febrero");
+                break;
+
+            case 3:
+                System.out.println("Marzo");
+                break;
+
+            case 4:
+                System.out.println("Abril");
+                break;
+
+            case 5:
+                System.out.println("Mayo");
+                break;
+
+            case 6:
+                System.out.println("Junio");
+                break;
+
+            case 7:
+                System.out.println("Julio");
+                break;
+
+            case 8:
+                System.out.println("Agosto");
+                break;
+
+            case 9:
+                System.out.println("Septiembre");
+                break;
+
+            case 10:
+                System.out.println("Octubre");
+                break;
+
+            case 11:
+                System.out.println("Noviembre");
+                break;
+
+            case 12:
+                System.out.println("Diciembre");
+                break;
+
+            default:
+                System.out.println("El numero que  no corresponde a un mes del año");
+                break;
+
+        }
     }
 
     /**
@@ -435,7 +493,11 @@ public class Main {
      * un recorrido para mostrar sus elementos."
      */
     public static void estructuraBaseEjercicio23() {
+        int[] numeros = {30, 20, 80, 40, 100};
 
+        for (int i = 0; i < numeros.length; i++) {
+            System.out.println(numeros[i]);
+        }
     }
 
     /**
@@ -492,17 +554,17 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int[] numeros = new int[5];
         int numerosPares = 0;
-for (int i = 0; i < numeros.length; i++) {
-        System.out.println("Ingrese 1 numero:");
-        numeros[i] = scanner.nextInt();
-        System.out.println("tu numero es " + numeros[i]);
+        for (int i = 0; i < numeros.length; i++) {
+            System.out.println("Ingrese 1 numero:");
+            numeros[i] = scanner.nextInt();
+            System.out.println("tu numero es " + numeros[i]);
 
-        if (numeros[i] % 2 == 0) {
-            numerosPares++;
+            if (numeros[i] % 2 == 0) {
+                numerosPares++;
+            }
         }
-    }
 
-    System.out.println("Cantidad de numeros pares: " + numerosPares);
+        System.out.println("Cantidad de numeros pares: " + numerosPares);
 
     }
 
@@ -614,29 +676,22 @@ for (int i = 0; i < numeros.length; i++) {
 
     }
 
-    /**
-     * Problema 32: Crea un arreglo con las siguientes notas:
-     *
-     * {70, 85, 45, 90, 60}
-     *
-     * Recorre el arreglo y cuenta:
-     *
-     * - Cuántos estudiantes aprobaron. - Cuántos estudiantes reprobaron.
-     *
-     * Una nota igual o mayor a 60 se considera aprobada.
-     *
-     * Al resolver el problema y comprobar que ejecuta correctamente, borra esta
-     * sección del comentario.
-     *
-     * git add Main.java git commit -m "feat: resolver problema 32 aprobados
-     * reprobados" git push origin rama_destino
-     *
-     * gh pr create --base tu-rama --head rama_destino \ --title "Resolver
-     * problema 32" \ --body "Se recorrió un arreglo de notas para contabilizar
-     * estudiantes aprobados y reprobados."
-     */
     public static void estructuraBaseEjercicio32() {
+        int[] notas = {70, 85, 45, 90, 60};
 
+        int aprobados = 0;
+        int reprobados = 0;
+
+        for (int nota : notas) {
+            if (nota >= 60) {
+                aprobados++;
+            } else {
+                reprobados++;
+            }
+        }
+
+        System.out.println("Estudiantes aprobados: " + aprobados);
+        System.out.println("Estudiantes reprobados: " + reprobados);
     }
 
 }
