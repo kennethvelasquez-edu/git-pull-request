@@ -7,13 +7,18 @@ public class Main {
     public static void main(String[] args) {
 
 
+
 estructuraBaseEjercicio21();
-    }
+    
         estructuraBaseEjercicio23();
 
 
         estructuraBaseEjercicio9();
         estructuraBaseEjercicio12();
+
+      
+        estructuraBaseEjercicio4();
+
 
     }
 
@@ -72,9 +77,22 @@ estructuraBaseEjercicio21();
      * entero es par o impar."
      */
     public static void estructuraBaseEjercicio4() {
+        
+    int a = 12;
+    int b = 22;
+    int c = 36;
+    
+    int mayor = Math.max(a, Math.max(b, c));
+    
+        System.out.println("El numero mayor es ; ");
+        System.out.println(mayor);
+        
 
     }
 
+
+    
+    
     /**
      * Problema 5: Define tres números enteros y muestra cuál de ellos es el
      * mayor.
