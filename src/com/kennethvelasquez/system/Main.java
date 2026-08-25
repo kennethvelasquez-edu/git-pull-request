@@ -201,6 +201,37 @@ public class Main {
      */
     public static void estructuraBaseEjercicio11() {
 
+        int numero = 5;
+        String diaSemana;
+
+        switch (numero) {
+            case 1:
+                diaSemana = "Domingo";
+                break;
+            case 2:
+                diaSemana = "Lunes";
+                break;
+            case 3:
+                diaSemana = "Martes";
+                break;
+            case 4:
+                diaSemana = "Miercoles";
+                break;
+            case 5:
+                diaSemana = "Jueves";
+                break;
+            case 6:
+                diaSemana = "Viernes";
+                break;
+            case 7:
+                diaSemana = "Sabado";
+                break;
+            default:
+                diaSemana = "Numero Invalido";
+                break;
+        }
+        System.out.println("El dia es: " + diaSemana);
+
     }
 
     /**
