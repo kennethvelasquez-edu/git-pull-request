@@ -1,5 +1,4 @@
 package com.kennethvelasquez.system;
-
 import static java.lang.Math.PI;
 
 public class Main {
@@ -25,6 +24,35 @@ public class Main {
     }
 
     /**
+<<<<<<< HEAD
+     * Problema 2: Define dos números enteros y muestra cuál de los dos es
+     * mayor.
+=======
+     * Problema 1: Solicita o define dos números enteros y muestra la suma de
+     * ambos.
+>>>>>>> 89413ecbf3fde47c0bb770b253c9ebb7fb8cbb60
+     *
+     * Al resolver el problema y comprobar que ejecuta correctamente, borra esta
+     * sección del comentario.
+     *
+<<<<<<< HEAD
+     * git add Main.java git commit -m "feat: resolver problema 2 numero mayor"
+     * git push origin rama_destino
+     *
+     * gh pr create --base tu-rama --head rama_destino \ --title "Resolver
+=======
+     * git add Main.java git commit -m "feat: resolver problema 1 suma de
+     * numeros" git push origin rama_destino
+     *
+     * gh pr create --base tu-rama --head rama_destino \ --title "Resolver
+     * problema 1" \ --body "Se implementó la lógica necesaria para sumar dos
+     * números enteros y mostrar el resultado."
+     */
+    public static void estructuraBaseEjercicio1() {
+
+    }
+
+    /**
      * Problema 2: Define dos números enteros y muestra cuál de los dos es
      * mayor.
      *
@@ -35,6 +63,7 @@ public class Main {
      * git push origin rama_destino
      *
      * gh pr create --base tu-rama --head rama_destino \ --title "Resolver
+>>>>>>> 89413ecbf3fde47c0bb770b253c9ebb7fb8cbb60
      * problema 2" \ --body "Se agregó una comparación entre dos números para
      * determinar cuál es mayor."
      */
@@ -149,6 +178,8 @@ public class Main {
     public static void estructuraBaseEjercicio8() {
 
     }
+
+    
     public static void estructuraBaseEjercicio9() {
 
         double radio = 12.5;
@@ -488,6 +519,7 @@ public class Main {
     }
 
     /**
+<<<<<<< HEAD
      * <<<<<<< HEAD
      * Problema 24: Crea un arreglo con 5 números enteros y calcula la suma de
      * todos sus elementos.
@@ -507,6 +539,15 @@ public class Main {
      * lista) gh pr create --base tu-rama --head rama_destino \ --title
      * "Resolver problema 24" \ --body "Se implementó un recorrido de arreglo
      * para calcular la suma de todos sus valores."
+=======
+     *
+     * 0git add Main.java git commit -m "feat: resolver problema 24 sumar
+     * arreglo" git push origin rama_destino
+     *
+     * gh pr create --base tu-rama --head rama_destino \ --title "Resolver
+     * problema 24" \ --body "Se implementó un recorrido de arreglo para
+     * calcular la suma de todos sus valores."
+>>>>>>> 89413ecbf3fde47c0bb770b253c9ebb7fb8cbb60
      */
     public static void estructuraBaseEjercicio24() {
         int[] numeros;
@@ -526,7 +567,7 @@ public class Main {
         System.out.println("Este es el numero 5: " + numeros[4]);
 
         sumaNumeros = numeros[0] + numeros[1] + numeros[2] + numeros[3] + numeros[4];
-
+        
         System.out.println("");
         System.out.println("Esta es la suma de los numeros: " + sumaNumeros);
     }
@@ -674,7 +715,6 @@ public class Main {
     public static void estructuraBaseEjercicio31() {
 
     }
-
     public static void estructuraBaseEjercicio32() {
         int[] notas = {70, 85, 45, 90, 60};
 
