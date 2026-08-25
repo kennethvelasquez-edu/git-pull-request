@@ -1,12 +1,14 @@
 package com.kennethvelasquez.system;
 
+import static java.lang.Math.PI;
+
 
 
 public class Main {
 
     public static void main(String[] args) {
 
-        estructuraBaseEjercicio32();
+        estructuraBaseEjercicio9();
 
     }
 
@@ -196,6 +198,13 @@ public class Main {
      * --body "Se implementó el cálculo del área de un círculo utilizando su radio."
      */
     public static void estructuraBaseEjercicio9() {
+        
+        double radio = 12.5;
+        
+        double area = PI * radio * radio;
+        
+        
+        System.out.println("El area del circulo es " + area);
 
     }
 
