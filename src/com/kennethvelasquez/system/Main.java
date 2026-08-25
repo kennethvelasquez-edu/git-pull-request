@@ -6,7 +6,11 @@ public class Main {
 
     public static void main(String[] args) {
 
+
+estructuraBaseEjercicio21();
+    }
         estructuraBaseEjercicio23();
+
 
         estructuraBaseEjercicio9();
         estructuraBaseEjercicio12();
@@ -432,7 +436,13 @@ public class Main {
      * utilizando el método equals."
      */
     public static void estructuraBaseEjercicio21() {
-
+        String primerPalabra = "Kenneth";
+        String segundaPalabra = "Kenneth";
+        
+        if (primerPalabra.equals(segundaPalabra)){
+            System.out.println("Ambas palabras son identicas.");
+        }else
+            System.out.println("Las palabras son distintas.");
     }
 
     /**
