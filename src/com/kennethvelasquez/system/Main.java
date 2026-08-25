@@ -1,14 +1,23 @@
 package com.kennethvelasquez.system;
 
-
 import static java.lang.Math.PI;
+
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main (String[] args) {
+
+
         // Cada alumno puede llamar temporalmente su método aquí para probarlo.
         // Ejemplo:
         //estructuraBaseEjercicio1();
+        estructuraBaseEjercicio18();
+        
+
+        estructuraBaseEjercicio23();
+
+        estructuraBaseEjercicio9();
+        estructuraBaseEjercicio12();
 }
 
     
@@ -373,7 +382,7 @@ public class Main {
      * problema 18" \ --body "Se implementó el cálculo del factorial de un
      * número utilizando un ciclo."
      */
-    public static void estructuraBaseEjercicio18() {
+      public static void estructuraBaseEjercicio18() {
         int numero = 5;
 
         long factorial = 1;
@@ -385,7 +394,7 @@ public class Main {
         System.out.println("El factorial de " + numero + "! es: " + factorial);
     }
 
-}
+
 
 
     /**
@@ -668,5 +677,6 @@ public class Main {
         System.out.println("Estudiantes reprobados: " + reprobados);
     }
 
+    }
 
 
