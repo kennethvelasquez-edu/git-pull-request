@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
 
         estructuraBaseEjercicio12();
-
+        estructuraBaseEjercicio30();
     }
 
 
@@ -26,8 +26,9 @@ public class Main {
      * --title "Resolver problema 1" \
      * --body "Se implementó la lógica necesaria para sumar dos números enteros y mostrar el resultado."
      */
-    public static void estructuraBaseEjercicio1() {
-
+    public static void estructuraBaseEjercicio1(int var1, int var2) {
+        int var3 = var1 + var2;
+        System.out.println(var3);
     }
 
 
@@ -689,27 +690,17 @@ public class Main {
     }
 
 
-    /**
-     * Problema 30:
-     * Define un año y determina si es bisiesto.
-     *
-     * Regla simplificada:
-     * Un año divisible entre 4 puede considerarse bisiesto.
-     *
-     * Al resolver el problema y comprobar que ejecuta correctamente,
-     * borra esta sección del comentario.
-     *
-     * git add Main.java
-     * git commit -m "feat: resolver problema 30 anio bisiesto"
-     * git push origin rama_destino
-     *
-     * gh pr create --base tu-rama --head rama_destino \
-     * --title "Resolver problema 30" \
-     * --body "Se agregó una validación para determinar si un año es divisible entre cuatro."
-     */
-    public static void estructuraBaseEjercicio30() {
 
+public static void estructuraBaseEjercicio30() {
+    int anio = 2024;
+
+    if (anio % 4 == 0) {
+        System.out.println("El año " + anio + " es bisiesto.");
+    } else {
+        System.out.println("El año " + anio + " no es bisiesto.");
     }
+}
+
 
 
     /**
