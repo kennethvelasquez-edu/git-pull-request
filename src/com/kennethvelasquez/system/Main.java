@@ -775,8 +775,6 @@ public class Main {
 }
 
 
-
-
     /**
      * Problema 32:
      * Crea un arreglo con las siguientes notas:
