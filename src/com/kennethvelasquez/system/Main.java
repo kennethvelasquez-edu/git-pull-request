@@ -35,15 +35,7 @@ public class Main {
      * Problema 3: Define un número entero y determina si es positivo, negativo
      * o cero.
      *
-<<<<<<< HEAD
-     * Al resolver el problema y comprobar que ejecuta correctamente, borra esta
-     * sección del comentario.
      *
-     * git add Main.java git commit -m "feat: resolver problema 3 signo numero"
-=======
-     * git add Main.java
-     * git commit -m "feat: resolver problema 3 signo numero"
->>>>>>> e0ddd8d (feat: resolver problema 3 signo numero)
      * git push origin rama_destino
      *
      * gh pr create --base tu-rama --head rama_destino \ --title "Resolver
@@ -52,12 +44,13 @@ public class Main {
      */
     public static void estructuraBaseEjercicio3() {
         double numero = 12.0;
-        
-        if(numero % 1 == 0){
-            System.out.println("Este numero " + numero + " es entero");
-        }else{
-            System.out.println("Este numero "+ numero + " no es un entero");
-        
+
+        if (numero > 0) {
+            System.out.println("Es positivo");
+        } else if (numero < 0) {
+            System.out.println("Es negativo");
+        } else {
+            System.out.println("Es cero");
         }
     }
 
@@ -152,12 +145,11 @@ public class Main {
     }
 
     public static void estructuraBaseEjercicio9() {
-        
+
         double radio = 12.5;
-        
+
         double area = PI * radio * radio;
-        
-        
+
         System.out.println("El area del circulo es " + area);
 
     }
@@ -217,66 +209,63 @@ public class Main {
      * un mes a partir de su número."
      */
     public static void estructuraBaseEjercicio12() {
-<<<<<<< HEAD
         int numeroMes = 9;
-        
-        switch (numeroMes){
+
+        switch (numeroMes) {
             case 1:
                 System.out.println("Enero");
                 break;
-                
+
             case 2:
                 System.out.println("Febrero");
                 break;
-                
+
             case 3:
                 System.out.println("Marzo");
                 break;
-                
+
             case 4:
                 System.out.println("Abril");
                 break;
-                
+
             case 5:
                 System.out.println("Mayo");
                 break;
-                
-            case 6: 
+
+            case 6:
                 System.out.println("Junio");
                 break;
-                
+
             case 7:
                 System.out.println("Julio");
                 break;
-                
+
             case 8:
                 System.out.println("Agosto");
                 break;
-                
+
             case 9:
                 System.out.println("Septiembre");
                 break;
-                
+
             case 10:
                 System.out.println("Octubre");
                 break;
-                
+
             case 11:
                 System.out.println("Noviembre");
                 break;
-                
+
             case 12:
                 System.out.println("Diciembre");
                 break;
-                
-                default:
-                    System.out.println("El numero que  no corresponde a un mes del año");
-                break;  
-                
+
+            default:
+                System.out.println("El numero que  no corresponde a un mes del año");
+                break;
+
         }
-=======
-   
->>>>>>> e0ddd8d (feat: resolver problema 3 signo numero)
+
     }
 
     /**
@@ -445,11 +434,12 @@ public class Main {
     public static void estructuraBaseEjercicio21() {
         String primerPalabra = "Kenneth";
         String segundaPalabra = "Kenneth";
-        
-        if (primerPalabra.equals(segundaPalabra)){
+
+        if (primerPalabra.equals(segundaPalabra)) {
             System.out.println("Ambas palabras son identicas.");
-        }else
+        } else {
             System.out.println("Las palabras son distintas.");
+        }
     }
 
     /**
@@ -655,7 +645,6 @@ public class Main {
 
     }
 
-
     public static void estructuraBaseEjercicio32() {
         int[] notas = {70, 85, 45, 90, 60};
 
@@ -674,12 +663,4 @@ public class Main {
         System.out.println("Estudiantes reprobados: " + reprobados);
     }
 
-<<<<<<< HEAD
 }
-=======
-    System.out.println("Estudiantes aprobados: " + aprobados);
-    System.out.println("Estudiantes reprobados: " + reprobados);
-}
-
-}
->>>>>>> e0ddd8d (feat: resolver problema 3 signo numero)
