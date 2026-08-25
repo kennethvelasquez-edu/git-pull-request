@@ -2,21 +2,16 @@ package com.kennethvelasquez.system;
 
 import static java.lang.Math.PI;
 
-
 public class Main {
-
-    public static void main (String[] args) {
-
-
+  
+    public static void main(String[] args) {
         // Cada alumno puede llamar temporalmente su método aquí para probarlo.
         // Ejemplo:
-        //estructuraBaseEjercicio1();
-        estructuraBaseEjercicio18();
-        
+        // estructuraBaseEjercicio1();  
 
-        // Cada alumno puede llamar temporalmente su método aquí para probarlo.
-        // Ejemplo:
-        // estructuraBaseEjercicio1();
+        estructuraBaseEjercicio23();
+        estructuraBaseEjercicio9();
+        estructuraBaseEjercicio12();
     }
 
     public static void estructuraBaseEjercicio1(int var1, int var2) {
@@ -151,12 +146,11 @@ public class Main {
     }
 
     public static void estructuraBaseEjercicio9() {
-        
+
         double radio = 12.5;
-        
+
         double area = PI * radio * radio;
-        
-        
+
         System.out.println("El area del circulo es " + area);
 
     }
@@ -247,60 +241,60 @@ public class Main {
      */
     public static void estructuraBaseEjercicio12() {
         int numeroMes = 9;
-        
-        switch (numeroMes){
+
+        switch (numeroMes) {
             case 1:
                 System.out.println("Enero");
                 break;
-                
+
             case 2:
                 System.out.println("Febrero");
                 break;
-                
+
             case 3:
                 System.out.println("Marzo");
                 break;
-                
+
             case 4:
                 System.out.println("Abril");
                 break;
-                
+
             case 5:
                 System.out.println("Mayo");
                 break;
-                
-            case 6: 
+
+            case 6:
                 System.out.println("Junio");
                 break;
-                
+
             case 7:
                 System.out.println("Julio");
                 break;
-                
+
             case 8:
                 System.out.println("Agosto");
                 break;
-                
+
             case 9:
                 System.out.println("Septiembre");
                 break;
-                
+
             case 10:
                 System.out.println("Octubre");
                 break;
-                
+
             case 11:
                 System.out.println("Noviembre");
                 break;
-                
+
             case 12:
                 System.out.println("Diciembre");
                 break;
-                
-                default:
-                    System.out.println("El numero que  no corresponde a un mes del año");
-                break;  
-                
+
+            default:
+                System.out.println("El numero que  no corresponde a un mes del año");
+                break;
+
         }
     }
 
@@ -488,22 +482,12 @@ public class Main {
             System.out.println("Las palabras son distintas.");
     }
 
-    /**
-     * Problema 22: Define una palabra y muestra su primer carácter.
-     *
-     * Utiliza charAt().
-     *
-     * Al resolver el problema y comprobar que ejecuta correctamente, borra esta
-     * sección del comentario.
-     *
-     * git add Main.java git commit -m "feat: resolver problema 22 primer
-     * caracter" git push origin rama_destino
-     *
-     * gh pr create --base tu-rama --head rama_destino \ --title "Resolver
-     * problema 22" \ --body "Se implementó la obtención del primer carácter de
-     * una palabra."
-     */
     public static void estructuraBaseEjercicio22() {
+
+        String funnyWord = "Hello world :3";
+        char firstLetter = funnyWord.charAt(0);
+
+        System.out.println(firstLetter);
 
     }
 
@@ -530,24 +514,12 @@ public class Main {
     }
 
     /**
-     * Problema 24: Crea un arreglo con 5 números enteros y calcula la suma de
-     * todos sus elementos.
      *
-     * Al resolver el problema y comprobar que ejecuta correctamente, borra esta
-     * sección del comentario.
+     * public static void estructuraBaseEjercicio24() {
      *
-     * git add Main.java git commit -m "feat: resolver problema 24 sumar
-     * arreglo" git push origin rama_destino
+     * }
      *
-     * gh pr create --base tu-rama --head rama_destino \ --title "Resolver
-     * problema 24" \ --body "Se implementó un recorrido de arreglo para
-     * calcular la suma de todos sus valores."
-     */
-    public static void estructuraBaseEjercicio24() {
-
-    }
-
-    /**
+     * /**
      * Problema 25: Crea un arreglo con 5 números enteros y encuentra el número
      * mayor.
      *
@@ -690,7 +662,6 @@ public class Main {
     public static void estructuraBaseEjercicio31() {
 
     }
-
 
     public static void estructuraBaseEjercicio32() {
         int[] notas = {70, 85, 45, 90, 60};
