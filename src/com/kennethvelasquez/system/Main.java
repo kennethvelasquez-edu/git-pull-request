@@ -6,8 +6,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-
-estructuraBaseEjercicio21();
+        // Cada alumno puede llamar temporalmente su método aquí para probarlo.
+        // Ejemplo:
+        // estructuraBaseEjercicio1();
     }
         estructuraBaseEjercicio23();
 
@@ -160,23 +161,26 @@ estructuraBaseEjercicio21();
     }
 
     /**
-     * Problema 10: Define tres notas y calcula el promedio. Muestra si el
-     * estudiante aprobó.
-     *
-     * Se considera aprobado si el promedio es mayor o igual a 60.
-     *
-     * Al resolver el problema y comprobar que ejecuta correctamente, borra esta
-     * sección del comentario.
-     *
-     * git add Main.java git commit -m "feat: resolver problema 10 promedio
-     * notas" git push origin rama_destino
+     * git add Main.java
+     * git commit -m "feat: resolver problema 10 promedio notas"
+     * git push origin rama_destino
      *
      * gh pr create --base tu-rama --head rama_destino \ --title "Resolver
      * problema 10" \ --body "Se calculó el promedio de tres notas y se agregó
      * una validación para determinar si el estudiante aprobó."
      */
     public static void estructuraBaseEjercicio10() {
-
+        
+        int notaUno = 87;
+        int notaDos = 69;
+        int notaTres = 77;
+        double promedioTotal = (notaUno + notaDos + notaTres)  /  3;
+        
+        if (promedioTotal >= 60) {
+            System.out.println("Felicidades!! Usted aprobo con un total de: " + promedioTotal);
+        } else {
+            System.out.println("Lastima. Usted desaprobó con un total de: " + promedioTotal);
+        }
     }
 
     /**
