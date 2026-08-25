@@ -6,13 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // Cada alumno puede llamar temporalmente su método aquí para probarlo.
-        // Ejemplo:
-        // estructuraBaseEjercicio1();
-    }
         estructuraBaseEjercicio23();
-
-
         estructuraBaseEjercicio9();
         estructuraBaseEjercicio12();
 
