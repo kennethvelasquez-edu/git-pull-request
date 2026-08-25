@@ -6,15 +6,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-
-estructuraBaseEjercicio21();
-    }
-        estructuraBaseEjercicio23();
-
-
-        estructuraBaseEjercicio9();
-        estructuraBaseEjercicio12();
-
     }
 
     public static void estructuraBaseEjercicio1(int var1, int var2) {
@@ -44,10 +35,15 @@ estructuraBaseEjercicio21();
      * Problema 3: Define un número entero y determina si es positivo, negativo
      * o cero.
      *
+<<<<<<< HEAD
      * Al resolver el problema y comprobar que ejecuta correctamente, borra esta
      * sección del comentario.
      *
      * git add Main.java git commit -m "feat: resolver problema 3 signo numero"
+=======
+     * git add Main.java
+     * git commit -m "feat: resolver problema 3 signo numero"
+>>>>>>> e0ddd8d (feat: resolver problema 3 signo numero)
      * git push origin rama_destino
      *
      * gh pr create --base tu-rama --head rama_destino \ --title "Resolver
@@ -55,7 +51,14 @@ estructuraBaseEjercicio21();
      * número es positivo, negativo o cero."
      */
     public static void estructuraBaseEjercicio3() {
-
+        double numero = 12.0;
+        
+        if(numero % 1 == 0){
+            System.out.println("Este numero " + numero + " es entero");
+        }else{
+            System.out.println("Este numero "+ numero + " no es un entero");
+        
+        }
     }
 
     /**
@@ -214,6 +217,7 @@ estructuraBaseEjercicio21();
      * un mes a partir de su número."
      */
     public static void estructuraBaseEjercicio12() {
+<<<<<<< HEAD
         int numeroMes = 9;
         
         switch (numeroMes){
@@ -270,6 +274,9 @@ estructuraBaseEjercicio21();
                 break;  
                 
         }
+=======
+   
+>>>>>>> e0ddd8d (feat: resolver problema 3 signo numero)
     }
 
     /**
@@ -667,4 +674,12 @@ estructuraBaseEjercicio21();
         System.out.println("Estudiantes reprobados: " + reprobados);
     }
 
+<<<<<<< HEAD
 }
+=======
+    System.out.println("Estudiantes aprobados: " + aprobados);
+    System.out.println("Estudiantes reprobados: " + reprobados);
+}
+
+}
+>>>>>>> e0ddd8d (feat: resolver problema 3 signo numero)
