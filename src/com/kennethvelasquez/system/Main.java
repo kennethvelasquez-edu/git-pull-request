@@ -7,6 +7,7 @@ public class Main {
         // Cada alumno puede llamar temporalmente su método aquí para probarlo.
         // Ejemplo:
         // estructuraBaseEjercicio1();
+       
     }
 
     /**
@@ -472,39 +473,12 @@ public class Main {
 
     }
 
-    /**
-     * Problema 26: Crea un arreglo con 5 números enteros y cuenta cuántos son
-     * pares.
-     *
-     * Al resolver el problema y comprobar que ejecuta correctamente, borra esta
-     * sección del comentario.
-     *
-     * git add Main.java git commit -m "feat: resolver problema 26 contar pares"
-     * git push origin rama_destino
-     *
-     * gh pr create --base tu-rama --head rama_destino \ --title "Resolver
-     * problema 26" \ --body "Se implementó un recorrido para contar cuántos
-     * números pares existen en un arreglo."
-     */
+   
     public static void estructuraBaseEjercicio26() {
 
     }
 
-    /**
-     * Problema 27: Define el precio de un producto. Si el precio es mayor a
-     * Q100, aplica un descuento del 10%. Muestra el precio original, descuento
-     * y precio final.
-     *
-     * Al resolver el problema y comprobar que ejecuta correctamente, borra esta
-     * sección del comentario.
-     *
-     * git add Main.java git commit -m "feat: resolver problema 27 descuento
-     * producto" git push origin rama_destino
-     *
-     * gh pr create --base tu-rama --head rama_destino \ --title "Resolver
-     * problema 27" \ --body "Se agregó una condición para aplicar un descuento
-     * del 10 por ciento cuando el precio supera Q100."
-     */
+ 
     public static void estructuraBaseEjercicio27() {
 
         Double precio = 150.0;
