@@ -689,30 +689,6 @@ public class Main {
     }
 
 
-    /**
-     * Problema 32:
-     * Crea un arreglo con las siguientes notas:
-     *
-     * {70, 85, 45, 90, 60}
-     *
-     * Recorre el arreglo y cuenta:
-     *
-     * - Cuántos estudiantes aprobaron.
-     * - Cuántos estudiantes reprobaron.
-     *
-     * Una nota igual o mayor a 60 se considera aprobada.
-     *
-     * Al resolver el problema y comprobar que ejecuta correctamente,
-     * borra esta sección del comentario.
-     *
-     * git add Main.java
-     * git commit -m "feat: resolver problema 32 aprobados reprobados"
-     * git push origin rama_destino
-     *
-     * gh pr create --base tu-rama --head rama_destino \
-     * --title "Resolver problema 32" \
-     * --body "Se recorrió un arreglo de notas para contabilizar estudiantes aprobados y reprobados."
-     */
   public static void estructuraBaseEjercicio32() {
     int[] notas = {70, 85, 45, 90, 60};
 
