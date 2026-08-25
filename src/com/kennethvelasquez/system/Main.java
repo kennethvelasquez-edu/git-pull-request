@@ -28,27 +28,6 @@ public class Main {
      * Al resolver el problema y comprobar que ejecuta correctamente, borra esta
      * sección del comentario.
      *
-=======
-    /**
-     * Problema 1: Solicita o define dos números enteros y muestra la suma de
-     * ambos.
-     *
-     * Al resolver el problema y comprobar que ejecuta correctamente, borra esta
-     * sección del comentario.
-     *
-     * git add Main.java git commit -m "feat: resolver problema 1 suma de
-     * numeros" git push origin rama_destino
-     *
-     * gh pr create --base tu-rama --head rama_destino \ --title "Resolver
-     * problema 1" \ --body "Se implementó la lógica necesaria para sumar dos
-     * números enteros y mostrar el resultado."
-     */
-    public static void estructuraBaseEjercicio1() {
-
-    }
-
-    /**
->>>>>>> 207cc5d (feat: resolver problema 2 numero mayor)
      * git add Main.java git commit -m "feat: resolver problema 2 numero mayor"
      * git push origin rama_destino
      *
