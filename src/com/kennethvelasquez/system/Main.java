@@ -461,24 +461,13 @@ public class Main {
     }
 
 
-    /**
-     * Problema 22:
-     * Define una palabra y muestra su primer carácter.
-     *
-     * Utiliza charAt().
-     *
-     * Al resolver el problema y comprobar que ejecuta correctamente,
-     * borra esta sección del comentario.
-     *
-     * git add Main.java
-     * git commit -m "feat: resolver problema 22 primer caracter"
-     * git push origin rama_destino
-     *
-     * gh pr create --base tu-rama --head rama_destino \
-     * --title "Resolver problema 22" \
-     * --body "Se implementó la obtención del primer carácter de una palabra."
-     */
+    
     public static void estructuraBaseEjercicio22() {
+        
+        String funnyWord = "Hello world :3";
+        char firstLetter = funnyWord.charAt(0);
+        
+        System.out.println(firstLetter);
 
     }
 
@@ -499,12 +488,13 @@ public class Main {
      * --body "Se creó un arreglo de números enteros y se agregó un recorrido para mostrar sus elementos."
      */
     public static void estructuraBaseEjercicio23() {
-
     }
 
 
     /**
      * Problema 24:
+     * 
+     
      * Crea un arreglo con 5 números enteros y calcula la suma de todos sus elementos.
      *
      * Al resolver el problema y comprobar que ejecuta correctamente,
@@ -519,7 +509,7 @@ public class Main {
      * --body "Se implementó un recorrido de arreglo para calcular la suma de todos sus valores."
      */
     public static void estructuraBaseEjercicio24() {
-
+        
     }
 
 
