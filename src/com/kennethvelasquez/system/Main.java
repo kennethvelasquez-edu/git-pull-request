@@ -2,6 +2,7 @@ package com.kennethvelasquez.system;
 
 import static java.lang.Math.PI;
 
+
 public class Main {
 
     public static void main(String[] args) {
@@ -16,6 +17,28 @@ public class Main {
     public static void estructuraBaseEjercicio1(int var1, int var2) {
         int var3 = var1 + var2;
         System.out.println(var3);
+
+        // Cada alumno puede llamar temporalmente su método aquí para probarlo.
+        // Ejemplo:
+        // estructuraBaseEjercicio1();
+    }
+
+    /**
+     * Problema 1: Solicita o define dos números enteros y muestra la suma de
+     * ambos.
+     *
+     * Al resolver el problema y comprobar que ejecuta correctamente, borra esta
+     * sección del comentario.
+     *
+     * git add Main.java git commit -m "feat: resolver problema 1 suma de
+     * numeros" git push origin rama_destino
+     *
+     * gh pr create --base tu-rama --head rama_destino \ --title "Resolver
+     * problema 1" \ --body "Se implementó la lógica necesaria para sumar dos
+     * números enteros y mostrar el resultado."
+     */
+    public static void estructuraBaseEjercicio1() {
+
     }
 
     /**
@@ -144,6 +167,24 @@ public class Main {
 
     }
 
+
+    /**
+     * Problema 9: Define el radio de un círculo y calcula su área.
+     *
+     * Fórmula: area = PI * radio * radio
+     *
+     * Puedes utilizar Math.PI.
+     *
+     * Al resolver el problema y comprobar que ejecuta correctamente, borra esta
+     * sección del comentario.
+     *
+     * git add Main.java git commit -m "feat: resolver problema 9 area circulo"
+     * git push origin rama_destino
+     *
+     * gh pr create --base tu-rama --head rama_destino \ --title "Resolver
+     * problema 9" \ --body "Se implementó el cálculo del área de un círculo
+     * utilizando su radio."
+     */
     public static void estructuraBaseEjercicio9() {
         
         double radio = 12.5;
@@ -635,10 +676,36 @@ public class Main {
      * números desde uno hasta un límite definido."
      */
     public static void estructuraBaseEjercicio31() {
+        int numero = 5;
 
+        for (int i = 1; i <= numero; i++) {
+            System.out.println(i);
+        }
     }
 
 
+
+    /**
+     * Problema 32: Crea un arreglo con las siguientes notas:
+     *
+     * {70, 85, 45, 90, 60}
+     *
+     * Recorre el arreglo y cuenta:
+     *
+     * - Cuántos estudiantes aprobaron. - Cuántos estudiantes reprobaron.
+     *
+     * Una nota igual o mayor a 60 se considera aprobada.
+     *
+     * Al resolver el problema y comprobar que ejecuta correctamente, borra esta
+     * sección del comentario.
+     *
+     * git add Main.java git commit -m "feat: resolver problema 32 aprobados
+     * reprobados" git push origin rama_destino
+     *
+     * gh pr create --base tu-rama --head rama_destino \ --title "Resolver
+     * problema 32" \ --body "Se recorrió un arreglo de notas para contabilizar
+     * estudiantes aprobados y reprobados."
+     */
     public static void estructuraBaseEjercicio32() {
         int[] notas = {70, 85, 45, 90, 60};
 
