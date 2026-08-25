@@ -6,9 +6,12 @@ public class Main {
 
     public static void main(String[] args) {
 
+<<<<<<< HEAD
         estructuraBaseEjercicio23();
 
         estructuraBaseEjercicio9();
+=======
+>>>>>>> a888462 (feat: resolver problema 12 nombre mes)
         estructuraBaseEjercicio12();
 
     }
@@ -262,9 +265,14 @@ public class Main {
                 break;
                 
                 default:
+<<<<<<< HEAD
                     System.out.println("El numero que  no corresponde a un mes del año");
                 break;  
                 
+=======
+                    System.out.println("El numero que indio no corresponde a un mes del año");
+                break;
+>>>>>>> a888462 (feat: resolver problema 12 nombre mes)
         }
     }
 
