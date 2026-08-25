@@ -8,8 +8,7 @@ public class Main {
 
         // Cada alumno puede llamar temporalmente su método aquí para probarlo.
         // Ejemplo:
-        // estructuraBaseEjercicio1();
-
+        // estructuraBaseEjercicio1();  
     }
 
 
@@ -461,7 +460,7 @@ public class Main {
     }
 
 
-    
+        
     public static void estructuraBaseEjercicio22() {
         
         String funnyWord = "Hello world :3";
