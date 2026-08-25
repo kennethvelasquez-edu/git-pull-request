@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        estructuraBaseEjercicio12();
+        estructuraBaseEjercicio3();
 
     }
 
@@ -55,9 +55,6 @@ public class Main {
      * Problema 3:
      * Define un número entero y determina si es positivo, negativo o cero.
      *
-     * Al resolver el problema y comprobar que ejecuta correctamente,
-     * borra esta sección del comentario.
-     *
      * git add Main.java
      * git commit -m "feat: resolver problema 3 signo numero"
      * git push origin rama_destino
@@ -67,7 +64,14 @@ public class Main {
      * --body "Se implementó la validación para identificar si un número es positivo, negativo o cero."
      */
     public static void estructuraBaseEjercicio3() {
-
+        double numero = 12.0;
+        
+        if(numero % 1 == 0){
+            System.out.println("Este numero " + numero + " es entero");
+        }else{
+            System.out.println("Este numero "+ numero + " no es un entero");
+        
+        }
     }
 
 
@@ -262,61 +266,7 @@ public class Main {
      * --body "Se implementó la lógica para obtener el nombre de un mes a partir de su número."
      */
     public static void estructuraBaseEjercicio12() {
-        int numeroMes = 9;
-        
-        switch (numeroMes){
-            case 1:
-                System.out.println("Enero");
-                break;
-                
-            case 2:
-                System.out.println("Febrero");
-                break;
-                
-            case 3:
-                System.out.println("Marzo");
-                break;
-                
-            case 4:
-                System.out.println("Abril");
-                break;
-                
-            case 5:
-                System.out.println("Mayo");
-                break;
-                
-            case 6: 
-                System.out.println("Junio");
-                break;
-                
-            case 7:
-                System.out.println("Julio");
-                break;
-                
-            case 8:
-                System.out.println("Agosto");
-                break;
-                
-            case 9:
-                System.out.println("Septiembre");
-                break;
-                
-            case 10:
-                System.out.println("Octubre");
-                break;
-                
-            case 11:
-                System.out.println("Noviembre");
-                break;
-                
-            case 12:
-                System.out.println("Diciembre");
-                break;
-                
-                default:
-                    System.out.println("El numero que indio no corresponde a un mes del año");
-                break;
-        }
+   
     }
 
 
