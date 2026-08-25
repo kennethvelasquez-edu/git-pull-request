@@ -467,7 +467,8 @@ public class Main {
     public static void estructuraBaseEjercicio19() {
 
     }
-
+    String texto = "olamundo";
+  String textoMayuscula = texto.toUpperCase();
 
     /**
      * Problema 20:
