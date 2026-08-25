@@ -6,20 +6,22 @@ public class Main {
 
     public static void main(String[] args) {
 
+        estructuraBaseEjercicio21();
 
-estructuraBaseEjercicio21();
-    }
         estructuraBaseEjercicio23();
 
-
         estructuraBaseEjercicio9();
-        estructuraBaseEjercicio12();
 
+        estructuraBaseEjercicio12();
     }
 
     public static void estructuraBaseEjercicio1(int var1, int var2) {
         int var3 = var1 + var2;
         System.out.println(var3);
+        // Cada alumno puede llamar temporalmente su método aquí para probarlo.
+        // Ejemplo:
+        // estructuraBaseEjercicio1();
+        estructuraBaseEjercicio24();
     }
 
     /**
@@ -147,14 +149,12 @@ estructuraBaseEjercicio21();
     public static void estructuraBaseEjercicio8() {
 
     }
-
     public static void estructuraBaseEjercicio9() {
-        
+
         double radio = 12.5;
-        
+
         double area = PI * radio * radio;
-        
-        
+
         System.out.println("El area del circulo es " + area);
 
     }
@@ -215,60 +215,60 @@ estructuraBaseEjercicio21();
      */
     public static void estructuraBaseEjercicio12() {
         int numeroMes = 9;
-        
-        switch (numeroMes){
+
+        switch (numeroMes) {
             case 1:
                 System.out.println("Enero");
                 break;
-                
+
             case 2:
                 System.out.println("Febrero");
                 break;
-                
+
             case 3:
                 System.out.println("Marzo");
                 break;
-                
+
             case 4:
                 System.out.println("Abril");
                 break;
-                
+
             case 5:
                 System.out.println("Mayo");
                 break;
-                
-            case 6: 
+
+            case 6:
                 System.out.println("Junio");
                 break;
-                
+
             case 7:
                 System.out.println("Julio");
                 break;
-                
+
             case 8:
                 System.out.println("Agosto");
                 break;
-                
+
             case 9:
                 System.out.println("Septiembre");
                 break;
-                
+
             case 10:
                 System.out.println("Octubre");
                 break;
-                
+
             case 11:
                 System.out.println("Noviembre");
                 break;
-                
+
             case 12:
                 System.out.println("Diciembre");
                 break;
-                
-                default:
-                    System.out.println("El numero que  no corresponde a un mes del año");
-                break;  
-                
+
+            default:
+                System.out.println("El numero que  no corresponde a un mes del año");
+                break;
+
         }
     }
 
@@ -438,11 +438,12 @@ estructuraBaseEjercicio21();
     public static void estructuraBaseEjercicio21() {
         String primerPalabra = "Kenneth";
         String segundaPalabra = "Kenneth";
-        
-        if (primerPalabra.equals(segundaPalabra)){
+
+        if (primerPalabra.equals(segundaPalabra)) {
             System.out.println("Ambas palabras son identicas.");
-        }else
+        } else {
             System.out.println("Las palabras son distintas.");
+        }
     }
 
     /**
@@ -487,6 +488,7 @@ estructuraBaseEjercicio21();
     }
 
     /**
+     * <<<<<<< HEAD
      * Problema 24: Crea un arreglo con 5 números enteros y calcula la suma de
      * todos sus elementos.
      *
@@ -496,12 +498,37 @@ estructuraBaseEjercicio21();
      * git add Main.java git commit -m "feat: resolver problema 24 sumar
      * arreglo" git push origin rama_destino
      *
-     * gh pr create --base tu-rama --head rama_destino \ --title "Resolver
-     * problema 24" \ --body "Se implementó un recorrido de arreglo para
-     * calcular la suma de todos sus valores."
+     * =======
+     *
+     * 0git add Main.java git commit -m "feat: resolver problema 24 sumar
+     * arreglo" git push origin rama_destino
+     *
+     * >>>>>>> 89413ec (Se completo el flujo del ejercicio 24 de hacer una
+     * lista) gh pr create --base tu-rama --head rama_destino \ --title
+     * "Resolver problema 24" \ --body "Se implementó un recorrido de arreglo
+     * para calcular la suma de todos sus valores."
      */
     public static void estructuraBaseEjercicio24() {
+        int[] numeros;
+        int sumaNumeros;
 
+        numeros = new int[5];
+        numeros[0] = 1;
+        numeros[1] = 2;
+        numeros[2] = 3;
+        numeros[3] = 4;
+        numeros[4] = 5;
+
+        System.out.println("Este es el numero 1: " + numeros[0]);
+        System.out.println("Este es el numero 2: " + numeros[1]);
+        System.out.println("Este es el numero 3: " + numeros[2]);
+        System.out.println("Este es el numero 4: " + numeros[3]);
+        System.out.println("Este es el numero 5: " + numeros[4]);
+
+        sumaNumeros = numeros[0] + numeros[1] + numeros[2] + numeros[3] + numeros[4];
+
+        System.out.println("");
+        System.out.println("Esta es la suma de los numeros: " + sumaNumeros);
     }
 
     /**
@@ -647,7 +674,6 @@ estructuraBaseEjercicio21();
     public static void estructuraBaseEjercicio31() {
 
     }
-
 
     public static void estructuraBaseEjercicio32() {
         int[] notas = {70, 85, 45, 90, 60};
