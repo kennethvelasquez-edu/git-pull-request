@@ -3,7 +3,7 @@ package com.kennethvelasquez.system;
 import static java.lang.Math.PI;
 
 public class Main {
-
+  
     public static void main(String[] args) {
         // Cada alumno puede llamar temporalmente su método aquí para probarlo.
         // Ejemplo:
@@ -156,23 +156,22 @@ public class Main {
     }
 
     /**
-     * Problema 10: Define tres notas y calcula el promedio. Muestra si el
-     * estudiante aprobó.
-     *
-     * Se considera aprobado si el promedio es mayor o igual a 60.
-     *
-     * Al resolver el problema y comprobar que ejecuta correctamente, borra esta
-     * sección del comentario.
-     *
-     * git add Main.java git commit -m "feat: resolver problema 10 promedio
-     * notas" git push origin rama_destino
-     *
      * gh pr create --base tu-rama --head rama_destino \ --title "Resolver
      * problema 10" \ --body "Se calculó el promedio de tres notas y se agregó
      * una validación para determinar si el estudiante aprobó."
      */
     public static void estructuraBaseEjercicio10() {
-
+        
+        int notaUno = 87;
+        int notaDos = 69;
+        int notaTres = 77;
+        double promedioTotal = (notaUno + notaDos + notaTres)  /  3;
+        
+        if (promedioTotal >= 60) {
+            System.out.println("Felicidades!! Usted aprobo con un total de: " + promedioTotal);
+        } else {
+            System.out.println("Lastima. Usted desaprobó con un total de: " + promedioTotal);
+        }
     }
 
     /**
@@ -192,6 +191,37 @@ public class Main {
      * el día de la semana correspondiente a un número."
      */
     public static void estructuraBaseEjercicio11() {
+
+        int numero = 5;
+        String diaSemana;
+
+        switch (numero) {
+            case 1:
+                diaSemana = "Domingo";
+                break;
+            case 2:
+                diaSemana = "Lunes";
+                break;
+            case 3:
+                diaSemana = "Martes";
+                break;
+            case 4:
+                diaSemana = "Miercoles";
+                break;
+            case 5:
+                diaSemana = "Jueves";
+                break;
+            case 6:
+                diaSemana = "Viernes";
+                break;
+            case 7:
+                diaSemana = "Sabado";
+                break;
+            default:
+                diaSemana = "Numero Invalido";
+                break;
+        }
+        System.out.println("El dia es: " + diaSemana);
 
     }
 
@@ -373,9 +403,20 @@ public class Main {
      * problema 18" \ --body "Se implementó el cálculo del factorial de un
      * número utilizando un ciclo."
      */
-    public static void estructuraBaseEjercicio18() {
+      public static void estructuraBaseEjercicio18() {
+        int numero = 5;
 
+        long factorial = 1;
+
+        for (int i = 1; i <= numero; i++) {
+            factorial *= i;
+        }
+
+        System.out.println("El factorial de " + numero + "! es: " + factorial);
     }
+
+
+
 
     /**
      * Problema 19: Define una palabra y muestra cuántos caracteres contiene.
@@ -432,7 +473,13 @@ public class Main {
      * utilizando el método equals."
      */
     public static void estructuraBaseEjercicio21() {
-
+        String primerPalabra = "Kenneth";
+        String segundaPalabra = "Kenneth";
+        
+        if (primerPalabra.equals(segundaPalabra)){
+            System.out.println("Ambas palabras son identicas.");
+        }else
+            System.out.println("Las palabras son distintas.");
     }
 
     public static void estructuraBaseEjercicio22() {
