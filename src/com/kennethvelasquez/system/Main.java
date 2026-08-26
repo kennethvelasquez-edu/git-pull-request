@@ -2,25 +2,17 @@ package com.kennethvelasquez.system;
 
 import static java.lang.Math.PI;
 
-
 public class Main {
-
-    public static void main (String[] args) {
-
-
+  
+    public static void main(String[] args) {
         // Cada alumno puede llamar temporalmente su método aquí para probarlo.
         // Ejemplo:
-        //estructuraBaseEjercicio1();
-        estructuraBaseEjercicio18();
-        
+        // estructuraBaseEjercicio1();  
 
         estructuraBaseEjercicio23();
-
         estructuraBaseEjercicio9();
         estructuraBaseEjercicio12();
-}
-
-    
+    }
 
     public static void estructuraBaseEjercicio1(int var1, int var2) {
         int var3 = var1 + var2;
@@ -154,34 +146,32 @@ public class Main {
     }
 
     public static void estructuraBaseEjercicio9() {
-        
+
         double radio = 12.5;
-        
+
         double area = PI * radio * radio;
-        
-        
+
         System.out.println("El area del circulo es " + area);
 
     }
 
     /**
-     * Problema 10: Define tres notas y calcula el promedio. Muestra si el
-     * estudiante aprobó.
-     *
-     * Se considera aprobado si el promedio es mayor o igual a 60.
-     *
-     * Al resolver el problema y comprobar que ejecuta correctamente, borra esta
-     * sección del comentario.
-     *
-     * git add Main.java git commit -m "feat: resolver problema 10 promedio
-     * notas" git push origin rama_destino
-     *
      * gh pr create --base tu-rama --head rama_destino \ --title "Resolver
      * problema 10" \ --body "Se calculó el promedio de tres notas y se agregó
      * una validación para determinar si el estudiante aprobó."
      */
     public static void estructuraBaseEjercicio10() {
-
+        
+        int notaUno = 87;
+        int notaDos = 69;
+        int notaTres = 77;
+        double promedioTotal = (notaUno + notaDos + notaTres)  /  3;
+        
+        if (promedioTotal >= 60) {
+            System.out.println("Felicidades!! Usted aprobo con un total de: " + promedioTotal);
+        } else {
+            System.out.println("Lastima. Usted desaprobó con un total de: " + promedioTotal);
+        }
     }
 
     /**
@@ -202,6 +192,37 @@ public class Main {
      */
     public static void estructuraBaseEjercicio11() {
 
+        int numero = 5;
+        String diaSemana;
+
+        switch (numero) {
+            case 1:
+                diaSemana = "Domingo";
+                break;
+            case 2:
+                diaSemana = "Lunes";
+                break;
+            case 3:
+                diaSemana = "Martes";
+                break;
+            case 4:
+                diaSemana = "Miercoles";
+                break;
+            case 5:
+                diaSemana = "Jueves";
+                break;
+            case 6:
+                diaSemana = "Viernes";
+                break;
+            case 7:
+                diaSemana = "Sabado";
+                break;
+            default:
+                diaSemana = "Numero Invalido";
+                break;
+        }
+        System.out.println("El dia es: " + diaSemana);
+
     }
 
     /**
@@ -220,60 +241,60 @@ public class Main {
      */
     public static void estructuraBaseEjercicio12() {
         int numeroMes = 9;
-        
-        switch (numeroMes){
+
+        switch (numeroMes) {
             case 1:
                 System.out.println("Enero");
                 break;
-                
+
             case 2:
                 System.out.println("Febrero");
                 break;
-                
+
             case 3:
                 System.out.println("Marzo");
                 break;
-                
+
             case 4:
                 System.out.println("Abril");
                 break;
-                
+
             case 5:
                 System.out.println("Mayo");
                 break;
-                
-            case 6: 
+
+            case 6:
                 System.out.println("Junio");
                 break;
-                
+
             case 7:
                 System.out.println("Julio");
                 break;
-                
+
             case 8:
                 System.out.println("Agosto");
                 break;
-                
+
             case 9:
                 System.out.println("Septiembre");
                 break;
-                
+
             case 10:
                 System.out.println("Octubre");
                 break;
-                
+
             case 11:
                 System.out.println("Noviembre");
                 break;
-                
+
             case 12:
                 System.out.println("Diciembre");
                 break;
-                
-                default:
-                    System.out.println("El numero que  no corresponde a un mes del año");
-                break;  
-                
+
+            default:
+                System.out.println("El numero que  no corresponde a un mes del año");
+                break;
+
         }
     }
 
@@ -452,25 +473,21 @@ public class Main {
      * utilizando el método equals."
      */
     public static void estructuraBaseEjercicio21() {
-
+        String primerPalabra = "Kenneth";
+        String segundaPalabra = "Kenneth";
+        
+        if (primerPalabra.equals(segundaPalabra)){
+            System.out.println("Ambas palabras son identicas.");
+        }else
+            System.out.println("Las palabras son distintas.");
     }
 
-    /**
-     * Problema 22: Define una palabra y muestra su primer carácter.
-     *
-     * Utiliza charAt().
-     *
-     * Al resolver el problema y comprobar que ejecuta correctamente, borra esta
-     * sección del comentario.
-     *
-     * git add Main.java git commit -m "feat: resolver problema 22 primer
-     * caracter" git push origin rama_destino
-     *
-     * gh pr create --base tu-rama --head rama_destino \ --title "Resolver
-     * problema 22" \ --body "Se implementó la obtención del primer carácter de
-     * una palabra."
-     */
     public static void estructuraBaseEjercicio22() {
+
+        String funnyWord = "Hello world :3";
+        char firstLetter = funnyWord.charAt(0);
+
+        System.out.println(firstLetter);
 
     }
 
@@ -497,24 +514,12 @@ public class Main {
     }
 
     /**
-     * Problema 24: Crea un arreglo con 5 números enteros y calcula la suma de
-     * todos sus elementos.
      *
-     * Al resolver el problema y comprobar que ejecuta correctamente, borra esta
-     * sección del comentario.
+     * public static void estructuraBaseEjercicio24() {
      *
-     * git add Main.java git commit -m "feat: resolver problema 24 sumar
-     * arreglo" git push origin rama_destino
+     * }
      *
-     * gh pr create --base tu-rama --head rama_destino \ --title "Resolver
-     * problema 24" \ --body "Se implementó un recorrido de arreglo para
-     * calcular la suma de todos sus valores."
-     */
-    public static void estructuraBaseEjercicio24() {
-
-    }
-
-    /**
+     * /**
      * Problema 25: Crea un arreglo con 5 números enteros y encuentra el número
      * mayor.
      *
@@ -658,7 +663,6 @@ public class Main {
 
     }
 
-
     public static void estructuraBaseEjercicio32() {
         int[] notas = {70, 85, 45, 90, 60};
 
@@ -677,6 +681,4 @@ public class Main {
         System.out.println("Estudiantes reprobados: " + reprobados);
     }
 
-    }
-
-
+}
